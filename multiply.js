@@ -21,18 +21,30 @@ Implement an algorithm that will do the magic finger multiplication thingy.
 9.  Add that number to RESULT 1.
 */
 
-var left = process.argv.slice(2)[0];
-var right = process.argv.slice(2)[1];
+function oneParam(which) {
+  return process.argv.slice(2)[which];
+}
 
-var leftGrouped = left - 5;
-var rightGrouped = right -5;
+var left = oneParam(0);
+var right = oneParam(1);
 
-var grouped = (leftGrouped + rightGrouped) * 10;
+function calcGrouped(n) {
+  return n - 5;
+}
 
-var leftFloating = 10 - left;
-var rightFloating = 10 - right;
+// var leftGrouped = calcGrouped(left);
+// var rightGrouped = calcGrouped(right);
 
-var ungrouped = leftFloating * rightFloating;
+var grouped = (calcGrouped(left) + calcGrouped(right)) * 10;
+
+function calcFloating(n) {
+  return 10 - n;
+}
+
+// var leftFloating = 10 - left;
+// var rightFloating = 10 - right;
+
+var ungrouped = calcFloating(left) * calcFloating(right);
 
 console.log(left + " times " + right + " equals " + (grouped + ungrouped) + ".");
 

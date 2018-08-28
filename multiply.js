@@ -32,5 +32,9 @@ var grouped = (leftGrouped + rightGrouped) * 10;
 var leftFloating = 10 - left;
 var rightFloating = 10 - right;
 
+var ungrouped = leftFloating * rightFloating;
 
-console.log(leftGrouped, rightGrouped);
+console.log(left + " times " + right + " equals " + (grouped + ungrouped) + ".");
+
+
+// console.log(leftGrouped, rightGrouped);

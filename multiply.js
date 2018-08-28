@@ -24,5 +24,7 @@ Implement an algorithm that will do the magic finger multiplication thingy.
 var left = process.argv.slice(2)[0];
 var right = process.argv.slice(2)[1];
 
-console.log("left = " + left);
-console.log("right = " + right);
+var leftGrouped = left - 5;
+var rightGrouped = right -5;
+
+console.log(leftGrouped, rightGrouped);

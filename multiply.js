@@ -27,4 +27,10 @@ var right = process.argv.slice(2)[1];
 var leftGrouped = left - 5;
 var rightGrouped = right -5;
 
+var grouped = (leftGrouped + rightGrouped) * 10;
+
+var leftFloating = 10 - left;
+var rightFloating = 10 - right;
+
+
 console.log(leftGrouped, rightGrouped);

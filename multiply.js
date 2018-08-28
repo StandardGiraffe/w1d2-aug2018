@@ -21,3 +21,8 @@ Implement an algorithm that will do the magic finger multiplication thingy.
 9.  Add that number to RESULT 1.
 */
 
+var left = process.argv.slice(2)[0];
+var right = process.argv.slice(2)[1];
+
+console.log("left = " + left);
+console.log("right = " + right);
